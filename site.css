@@ -3,3 +3,17 @@ body {
     font-family: Helvetica, sans-serif;
     font-size: 150%;
 }
+
+#listDiv {
+    border: 10px solid black;
+    border-radius: 10px;
+    color: blue;
+}
+
+#swapBtn {
+    display: none;
+}
+
+#part2 {
+    display: none;
+}
