@@ -20,9 +20,14 @@ document.addEventListener("DOMContentLoaded", function (event)
             swapBtn.style.display = "block";
         }
     }
+    //Added array.map().
+    const words = [fruitData[0],fruitData[1],fruitData[2]];
+    const swappedfruitData= words.map(newArray);
+    function newArray(words2){
+        return words2;
+    }
     //Event listener for the button that performs the section swap
     document.getElementById("swapBtn").addEventListener("click", swapSection);
-    let swappedfruitData=[fruitData[0],fruitData[1],fruitData[2]]
     //Sets 1st section to hidden and displays the 2nd section
     function swapSection() {
         part1.style.display = "none"
