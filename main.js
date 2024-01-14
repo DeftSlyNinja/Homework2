@@ -22,10 +22,20 @@ document.addEventListener("DOMContentLoaded", function (event)
     }
     //Event listener for the button that performs the section swap
     document.getElementById("swapBtn").addEventListener("click", swapSection);
-
+    let swappedfruitData=[fruitData[0],fruitData[1],fruitData[2]]
     //Sets 1st section to hidden and displays the 2nd section
     function swapSection() {
         part1.style.display = "none"
+        let ul = document.getElementById("swappedfruitUL")
+        
+        for (let i = 0; i < swappedfruitData.length; i++) {
+            swappedfruitData[i]= swappedfruitData[i].charAt(swappedfruitData[i].length-1)+
+            swappedfruitData[i].substring(1,swappedfruitData[i].length-1)+
+            swappedfruitData[i].charAt(0);
+            let li = document.createElement("li");
+            ul.appendChild(li);
+            li.innerHTML = swappedfruitData[i];
+        }
         part2.style.display = "block"
     }
 

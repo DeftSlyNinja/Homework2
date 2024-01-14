@@ -4,12 +4,21 @@ body {
     font-size: 150%;
 }
 
-#listDiv {
-    border: 10px solid black;
-    border-radius: 10px;
-    color: blue;
+#firstDiv {
+    font-weight: bold;
+    color: purple;
 }
 
+#listDiv {
+    font-weight: bolder;
+    font-weight: 900;
+    font-family:'Times New Roman', Times, serif;
+    color: green;
+}
+#message{
+    font-weight: bolder;
+    font-weight: 900;
+}
 #swapBtn {
     display: none;
 }
