@@ -20,9 +20,8 @@ document.addEventListener("DOMContentLoaded", function (event)
             swapBtn.style.display = "block";
         }
     }
-    //Added array.map().
-    const words = [fruitData[0],fruitData[1],fruitData[2]];
-    const swappedfruitData= words.map(newArray);
+    //Changed array.map() to fruitData.map().
+    const swappedfruitData= fruitData.map(newArray)
     function newArray(words2){
         return words2;
     }
